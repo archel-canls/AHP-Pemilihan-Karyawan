@@ -1,0 +1,24 @@
+<%- include('partials/header') %>
+
+<h2>Matrix Perbandingan Kriteria (Bobot Normalisasi)</h2>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Kriteria</th>
+      <th>Bobot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for(const kri of kriteria) { %>
+      <tr>
+        <td><%= kri %></td>
+        <td><%= (bobotKriteria[kri] * 100).toFixed(2) %> %</td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<p><a href="/hasil">Lihat Hasil Perhitungan Akhir</a></p>
+
+<%- include('partials/footer') %>

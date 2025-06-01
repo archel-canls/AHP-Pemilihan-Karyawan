@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+
+<h2>Step 1: Masukkan Kriteria (pisahkan dengan koma)</h2>
+<form action="/input-kriteria" method="post">
+  <input type="text" name="kriteria" placeholder="Contoh: Kepatuhan, Hasil Kerja, Inisiatif, Masa Kerja" size="70" value="<%= kriteria.join(', ') %>" required />
+  <button type="submit">Simpan Kriteria</button>
+</form>
+
+<%- include('partials/footer') %>

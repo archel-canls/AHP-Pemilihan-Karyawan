@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+<h2>Selamat datang di Aplikasi AHP Pemilihan Karyawan</h2>
+<p>Berikut kriteria yang akan digunakan:</p>
+<ul>
+  <% kriteria.forEach(kri => { %>
+    <li><%= kri %></li>
+  <% }) %>
+</ul>
+
+<p><a href="/input">Klik di sini untuk mengisi nilai alternatif</a></p>
+
+<%- include('partials/footer') %>
